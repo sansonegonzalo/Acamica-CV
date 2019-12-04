@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image:url('../img/background.jpg');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+aside {
+    margin-right: 9vw;
+    margin-left: 4.5vw;
+    max-width: 30vw;
+    display: flex;
+    align-self: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+main {
+    margin-left: 9vw;
+    color: white;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-pic{
+    border-radius: 180px;
+}
+
+.svg-inline--fa {
+    font-size: 1.5em;
+}
+
+.social {
+    display: flex;
+}
+
+.social li{
+    color:rgb(245, 245, 245);
+    list-style: none;
+    margin: 0.5em;
+}
+
+.social li:hover {
+    transform: scale(1.25);
+    color: rgb(41, 214, 203);
+}
+
+a:link {
+    color: rgb(245, 245, 245);
+}
+
+a:visited {
+    color: #ffe479;
+}
+
+a:hover {
+    color: rgb(245, 245, 245);
+}
+
+a:active {
+    color: rgb(245, 245, 245)
+}
+
+.hr {
+    border-color: rgb(165, 38, 16);
+    margin-top: 1.5rem;
+    margin-bottom: 1.25rem;
+    margin-left: 0;
+    width: 45vw;
+}
+
+.content {
+    display: inline-flex;
+}
+
+.nombre {
+    font-size: 2rem;
+    line-height: 1.125;
+    margin-bottom: 0.75rem;
+}
+
+.trabajo {
+    font-family: "Montserrat", "Quicksand", sans-serif;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #ffe479;
+    font-size: 0.75rem;
+}
+
+.content {
+    display: flex;
+}
+
+.content ol, .content li {
+    list-style: none;
+}
+
+.content ul li{
+    font-family: "Montserrat", "Quicksand", sans-serif;
+    letter-spacing: 0.1em;
+    border-bottom: 1px dashed white;
+    width: 25vw;
+    margin-bottom: 0.75rem;
+}
+
+#content4 li {
+    margin: 0 0.25vw;
+    display: inline;
+}
+
+.content img {
+    max-width: 10vw;
+    min-width: 7.5rem
+}
+
+.content {
+    font-size: 1.1rem;
+}
+
+.content div {
+    display: none; 
+    padding: 20px 25px 5px;
+}
+
+input {
+    display: none;
+}
+
+label {
+    font-family: "Montserrat", "Quicksand", sans-serif;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    background-color: rgb(51, 65, 76);
+    border-radius: 30px;
+    color: rgb(248, 168, 69);
+    display: inline-block;
+    font-size: 0.875rem;
+    line-height: 1;
+    padding: 1.25em 2em;
+    margin: 0.5em;
+    width: 11em;
+    text-align: center;
+}
+
+input:checked + label {
+    background:  rgb(248, 168, 69);
+    color: rgb(51, 65, 76);
+}
+
+#tab1:checked ~ .content #content1,
+#tab2:checked ~ .content #content2,
+#tab3:checked ~ .content #content3,
+#tab4:checked ~ .content #content4 {
+  display: block;
+}
